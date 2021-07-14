@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common part */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    height: 633px;
+    background-color: blue;
+}
+
+h1 {
+    color: white;
+    font-size: 64px;
+    line-height: 80px;
+}
+
+/* /* navigation  */
+nav ul {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    background-color: blue;
+    padding-left: 156px;
+    padding-top: 42px;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+button {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+}
+
+.link-button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+button:hover {
+    background: linear-gradient(57deg, #1e4d92, #00c6a7);
+}
+
+/*----------------------------------
+World cup Footballmatch
+------------------------- */
+.football-match {
+    width: 50%;
+    display: flex;
+}
+
+.information {
+    width: 485px;
+    height: 230px;
+    padding-left: 156px;
+    padding-top: 207px;
+    padding-bottom: 240px;
+}
+
+.play {
+    padding-right: 147px;
+    margin-left: 147px;
+}
+
+.play img {
+    width: 556.01px;
+    height: 438px;
+    padding-top: 153px;
+}
+
+.football-match:hover .play img {
+    transform: scale(1.5) rotate(65deg);
+    transition: transform 2s ease-in-out;
+}
+
+/* ****************
+Players information
+******************/
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding-left: 180px;
+    padding-right: 208px;
+}
+
+.player {
+
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    margin-top: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-banner {
+    padding-left: 15px;
+}
+
+.player-title {
+    padding: 10px;
+    font-size: 28px;
+}
+
+.player-banner img {
+    width: 300px;
+    height: 256px;
+    margin: 16px 0px;
+}
+
+.player-author {
+    padding: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+/* for Mobile device  */
+
+@media (max-width:992px) {
+
+    .football-match,
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:668px) {
+
+    .football-match,
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* --------------
+footer---------- */
+.background {
+    display: flex;
+    text-align: center;
+    margin-bottom: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.player-info {
+    margin: 20px 0px;
+}
+
+.player-info img {
+    width: 484px;
+    height: 110px;
+    padding-top: 158px;
+}
+
+
+.social-icons {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.fab {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* End */
